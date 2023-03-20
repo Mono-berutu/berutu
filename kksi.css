@@ -1,0 +1,287 @@
+*,html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: aqua;
+}
+.kepala{
+    width:100%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+}
+
+.kepala h1{
+    color: #ee840b;
+    background-color: rgb(150, 220, 20);
+    padding: 7px 8px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    /* backdrop-filter: blur(5px); */
+}
+.leher{
+    display: flex;
+}
+.coba{
+    display: flex;
+    background-color: chartreuse;
+    height: 405px;
+}
+.awal{
+    display: flex;
+    flex-direction: column;
+    background-color: crimson;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 400px;
+    padding: 3px;
+}
+
+.awal .nama{
+    font-size: 22px;
+    text-align: center;
+}
+.bulat{
+    margin-top: 10px;
+    height: 225px;
+    width: 225px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 15px #eea60b,
+                -3px 3px 15px #eea60b;
+    overflow: hidden;
+
+}
+
+.bulat #foto{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+#foto.kaka{
+    animation: animate 2s infinite;
+}
+@keyframes animate
+{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/* .pengurut{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hal{
+    position: relative;
+    right: 13%;
+    top: 4%;
+} */
+.awal h2{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin: 15px;
+}
+.cepat{
+    display: flex;
+    justify-content: center;
+}
+.cepat img{
+    width: 40px;
+    padding: 0 15px;
+}
+.atur{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.durasi{
+    -webkit-appearance: none;
+    background: #fff;
+    outline: none;
+    width: 20rem;
+    height: 8px;
+    overflow: hidden;
+    z-index: 0;
+    border-radius: 8px;
+}
+
+.durasi::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #dc8514;
+    box-shadow: -307px 0 0 300px #dc8514;
+}
+.vol{
+    width: 10rem;
+    -webkit-appearance: none;
+    border-radius: 8px;
+    height: 8px;
+    background: #fff;
+    overflow: hidden;
+}
+.vol::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid #dc8514;
+    box-shadow: -205px 0 0 200px #dc8514;
+}
+img{
+    cursor: pointer;
+}
+input{
+    cursor: pointer;
+}
+h2{
+    cursor: pointer;
+}
+ul{
+    width: 310px;
+    height: 25rem;
+    list-style: none;
+    flex-basis: 100%;
+    overflow-y: scroll;
+    padding: 0 5px;
+    position: relative;
+}
+ul li{
+    /* padding: 20px; */
+    margin: 20px;
+    position: relative;
+    top: 10%;
+    cursor: pointer;
+    font-weight: 700;
+}
+ul li:hover{
+    color: rgb(226, 151, 12);
+}
+ul li.hall{
+    color: rgb(226, 151, 12);
+    background-color: rgba(240, 3, 3, 0.15);
+    backdrop-filter: blur(5px);
+    padding: 5px;
+}
+
+#coba .ubah{
+    position: relative;
+    right: 8rem;
+}
+#coba .tetap{
+    position: relative;
+    left: 8rem;
+}
+
+#untuk-suara{
+    display: flex;
+}
+#untuk-suara input{
+    position: relative;
+    top: 8px;
+    margin: 0 3px;
+}
+
+/* akhir */
+.penutup{
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(orange, aqua, crimson);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.penutup img{
+    width: 30px;
+    height: 30px;
+}
+
+ul h2{
+    margin-top: 5px;
+    margin-left: 17px;
+    background-color: rgba(240, 3, 3, 0.15);
+    backdrop-filter: blur(5px);
+    padding: 10px;
+    text-decoration: underline;
+    position: relative;
+    color: crimson;
+}
+
+.ss{
+    position: fixed;
+    z-index: 2;
+}
+hr{
+    margin-left: 17px;
+    border-color: crimson;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    height: 3px;
+}
+
+::-webkit-scrollbar-track{
+    background: #eea60b;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(rgb(0, 102, 255), #ee0bee);
+    border-radius: 10px;
+    background-size: 1px;
+}
+#tutup img{
+    display: none;
+}
+
+
+/* responsive */
+@media screen and (max-width: 576px) {
+    .coba{
+        display: block;
+    }
+    ul{
+        display: none;
+    }
+    #tutup img{
+        display: inline;
+    }
+    #tutup{
+        width: 40px;
+        height: 40px;
+        position: relative;
+        bottom: 100%;
+        left: 90%;
+    }
+    #tutup.kasa{
+        width: 40px;
+        height: 40px;
+    }
+    ul.kan{
+        display: block;
+        width: 100%;
+        padding: 0;
+        height: 100%;
+        background: rgb(164, 231, 9);
+        position: relative;
+        bottom: 100%;
+        transition: all 0.3s;
+    }
+}
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="images/belajar.jpg">
+    <link rel="stylesheet" href="kksi.css">
+</head>
+<body>
+    <div class="kepala">
+        <h1>My Music</h1>
+        <div class="leher">
+            <div class="coba">
+                <div class="awal">
+                    <div class="bulat">
+                        <img src="" alt="" id="foto">
+                    </div>
+                    <h2 class="nama">nama musik</h2>
+                    <div class="cepat">
+                        <img src="rewind.svg" alt="" class="kiri">
+                        <div class="penutup">
+                            <img src="play.svg" alt="" class="mulai">
+                        </div>
+                        <img src="fast-forward.svg" alt="" class="lanjut">
+                    </div>
+                    <div class="atur">
+                        <input type="range" class="durasi">
+                        <div id="coba">
+                            <span class="ubah">00.00</span>
+                            <span class="tetap">00.00</span>
+                        </div>
+                        <div id="untuk-suara">
+                            <img src="volume/volume-x.svg" alt="" id="mati">
+                            <input type="range" class="vol" value="70">
+                            <img src="volume/volume-2.svg" alt="" id="penuh">
+                        </div>
+                    </div>
+                </div>
+                <ul class="list">
+                    <div class="ss">
+                        <h2>List Music By Mono Berutu</h2> 
+                    </div>
+                    <li data-src="laguku/sans.mp3" data-name="Fourtwnty" data-index="0" data-img="images/data1 (1).jpg"><span>Fourtwnty</span></li>
+                    <li data-src="laguku/komang.mp3" data-name="komang" data-index="1" data-img="images/belajar.jpg"><span>Komang</span></li>
+                    <li data-src="laguku/happy.mp3" data-name="Happy" data-index="2" data-img="images/bar.jpg"><span>Happy</span></li>
+                    <li data-src="laguku/Bruno Mars - Talking To The Moon (Official Lyric Video).mp3" data-name="Talking To The Moon" data-index="3" data-img="images/h3.jpg"><span>Talking To The Moon</span></li>
+                    <li data-src="laguku/Tom Odell - Another Love (Official Video).mp3" data-name="Another Love" data-index="4"><span>Another Love</span></li>
+                    <li data-src="laguku/The Walters -- I Love You So.mp3" data-name="I Love You So" data-index="5"><span>I Love You So</span></li>
+                    <li data-src="laguku/y2mate.com - For Revenge  Serana Official Lyric Video.mp3" data-name="For Revenge  Serana" data-index="6"><span>For Revenge Serana</span></li>
+                    <li data-src="laguku/Pamungkas  To The Bone.mp3" data-name="To The Bone" data-index="7"><span>To The Bone</span></li>
+                    <li data-src="laguku/Passenger  Let Her Go Official Video.mp3" data-name=" Let Her Go" data-index="8"><span> Let Her Go</span></li>
+                    <li data-src="laguku/Bruno Mars  When I Was Your Man Mix Lyric Video  John Legend Sam Smith.mp3" data-name="When I Was Your Man" data-index="9"><span>When I Was Your Man</span></li>
+                    <li data-src="laguku/Sal Priadi - Mesra Mesraannya Kecil Kecilan Dulu.mp3" data-name="Mesra Mesraannya Kecil Kecilan Dulu" data-index="10"><span>Mesra Mesraannya Kecil Kecilan Dulu</span></li>
+                    <li data-src="laguku/Sal Priadi - Kita usahakan rumah itu (Official Lyric Video)_7SqNVv98e8Q.mp3" data-name="Kita usahakan rumah itu" data-index="11"><span>Kita usahakan rumah itu</span></li>
+                </ul>
+                <audio src=""></audio>
+                <div id="tutup" onclick="dat()">
+                    <img src="music.svg" alt="" id="jj">
+                </div>     
+            </div>
+        </div>
+    </div>
+    <script src="ssk.js"></script>
+    <script>
+        const h = document.querySelector('.list')
+        const nan = document.querySelector('jj')
+        function dat(){
+            h.classList.toggle('kan')
+            closes.classList.toggle('kas')
+            nan.src = "x.svg"
+        }
+        // function dada(){
+        //     h.classList.remove('kan')
+        //     closes.classList.remove('kas')
+        // }
+    </script>
+</body>
+</html>
